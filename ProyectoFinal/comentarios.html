@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link href = "css/bootstrap.min.css" rel = "stylesheet" type = "text/css"/>
+    <link href="comentarios.css" rel="stylesheet" type="text/css"/>
+    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>Comment Box</title>
+</head>
+
+<body>
+
+<div class="container">
+
+<h3>Agrega un comentario</h3>
+<!-------Wrap------------>
+<div id="wrap">
+<div id="main">
+<div class="row">
+<div class="col-md-7">
+</div>
+</div>
+</div>
+
+<!------------Form Start---------->
+
+<div id='form'>
+<div class="row">
+<div class="col-md-12">
+
+<form action="" method="POST" id="commentform">
+
+<div id="comment-name" class="form-row p-1">
+<input type = "text" placeholder = "Nombre" name = "uname"  id = "name" >
+<script>document.getElementById("name").value = sessionStorage.getItem("perfil")</script>
+</div>
+<div id="comment-rate" class="form-row p-1">
+<input type = "text" placeholder = "Calificación" name = "pscore"  id = "score" >
+</div>
+<div id="comment-message" class="form-row p-1">
+<textarea name = "comment" placeholder = "Escribe tu comentario" id = "comment" ></textarea>
+</div>
+<a href="#"><input type="submit" name="dsubmit" id="commentSubmit" value="Submit Comment"></a>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    float: left;
+    position: absolute;
+    top: calc(50% - 198.3px);
+    left: calc(50% - 165px);
+    align-items: center;
+    background-color: #f5f5f5;
+    text-align: center;
+    justify-items: center;
+    margin: 0px;
+  }
+  .signin {
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+    text-align: center;
+  }
+  .form {
+    padding: 14px;
+    width: 300px;
+    border: solid 1px gray;
+    
+  }
+  .form:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(43, 112, 177, 0.555);
+  }
+  .contrasena {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  } 
+  .email {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: none;
+  }
+  .check {
+      margin-top: 10px;
+  }
+  .boton {
+    background-color:  rgb(45, 78, 189);
+    border: none;
+    color: white;
+    padding: 10px 70px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-family: 'Baloo Tamma 2', Regular;
+}
+.boton:hover {
+    background-color:  rgb(45, 78, 189); 
+}
+.boton:focus {
+  outline-color: rgb(45, 78, 189);
+}

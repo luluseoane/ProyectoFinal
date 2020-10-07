@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/dropzone.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="site-header sticky-top py-1 bg-dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+      <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+      <a class="nav-link dropdown-toggle blanco" data-toggle="dropdown" h.ref="#" role="button" aria-haspopup="true" aria-expanded="false" id="user" style="color: white;"></a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="my-profile.html">Perfil</a>
+          <a class="dropdown-item" href="#">Mis Compras</a>
+          <a class="dropdown-item" href="cart.html">Carrito</a>
+          <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="login.html" onclick="cerrar()">Cerrar sesión</a>
+        </div>
+    </div>
+  </nav>
+  <main role="main" class="pb-5">
+    <div class="text-center p-4">
+        <h2>Carrito de compra</h2>
+        <p class="lead">Detalle</p>
+    </div>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+      <td id="row1"></td>
+      <td id="row2"></td>
+      <td id="row3"></td>
+      <td id="row4">
+        <div>
+          <input class="quantity" name="quantity" value="1" type="number" id="quantity" min="1">
+        </div>
+      </td>
+      <td>
+        <span id="row5"></span>
+      </td>
+    </tr>
+      </tbody>
+    </table>
+    <table class="table table-sm" id="tablatot">
+    <tr>
+      <th scope="row">Subtotal</th>
+    </tr>
+    <tr>
+      <th scope="row">Envío</th>
+    </tr>
+    <tr>
+      <th scope="row">Total</th>
+    </tr>      
+    </table>
+  </main>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dropzone.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>
